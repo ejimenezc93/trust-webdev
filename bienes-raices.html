@@ -13,11 +13,13 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html"><span class="brand-mark">T</span><span>TRUST</span></a>
+      <a class="brand" href="index.html" aria-label="TRUST Costa Rica">
+        <img src="assets/img/logo%20trust%20gold.svg" alt="TRUST">
+      </a>
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">☰</button>
       <nav class="nav-menu" data-nav-menu><a href="legal-tributario.html">Legal tributario</a>
         <a href="contabilidad.html">Contabilidad</a>
-        <a href="bienes-raices.html">Bienes raíces</a>
+        <a href="bienes-raices.html" aria-current="page">Bienes raíces</a>
         <a href="seguros-inversion.html">Seguros e inversión</a></nav>
       <div class="nav-actions"><a class="btn btn-secondary" href="#contacto">WhatsApp</a><a class="btn btn-primary" href="#contacto">Agendar asesoría</a></div>
     </div>
@@ -25,19 +27,27 @@
 
   <main>
     <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">Inicio</a> / Bienes raíces</div>
-        <span class="eyebrow">Bienes raíces</span>
-        <h1>Construya patrimonio con decisiones inmobiliarias estratégicas</h1>
-        <p class="lead">Le acompañamos a invertir en propiedades con alto potencial de valorización, protegiendo su capital con criterio legal y financiero.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#contacto">Agendar asesoría</a><a class="btn btn-secondary" href="#contacto">Hablar por WhatsApp</a></div>
+      <div class="container page-hero-grid">
+        <div>
+          <div class="breadcrumb"><a href="index.html">Inicio</a> / Bienes raíces</div>
+          <span class="eyebrow">Bienes raíces</span>
+          <h1>Construya patrimonio con decisiones inmobiliarias estratégicas</h1>
+          <p class="lead">Le acompañamos a invertir en propiedades con alto potencial de valorización, protegiendo su capital con criterio legal y financiero.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#contacto">Agendar asesoría</a><a class="btn btn-secondary" href="#contacto">Hablar por WhatsApp</a></div>
+        </div>
+        <aside class="service-summary" aria-label="Resumen de bienes raíces">
+          <img src="assets/img/logo%20trust%20symbol%20only%20gold.svg" alt="" aria-hidden="true">
+          <strong>Inversión inmobiliaria con criterio patrimonial.</strong>
+          <p>Evaluamos oportunidades desde valorización, riesgo, legalidad y coherencia financiera.</p>
+          <div class="summary-list"><span>Análisis de oportunidad</span><span>Respaldo legal</span><span>Estructura patrimonial</span></div>
+        </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="container grid-2">
-        <article class="card"><span class="eyebrow">El problema</span><h2>El costo de operar sin estrategia.</h2><p>Tomar decisiones inmobiliarias sin criterio puede resultar costoso: propiedades mal evaluadas, poca claridad legal, impacto financiero no calculado o pérdida de liquidez.</p></article>
-        <article class="card"><span class="eyebrow">La solución</span><h2>Criterio, estructura y ejecución.</h2><p>Trust analiza cada oportunidad desde valorización, riesgo, legalidad y coherencia patrimonial para que comprar sea una decisión estratégica.</p></article>
+        <article class="editorial-card"><span class="eyebrow">El problema</span><h2>El costo de operar sin estrategia.</h2><p>Tomar decisiones inmobiliarias sin criterio puede resultar costoso: propiedades mal evaluadas, poca claridad legal, impacto financiero no calculado o pérdida de liquidez.</p></article>
+        <article class="editorial-card"><span class="eyebrow">La solución</span><h2>Criterio, estructura y ejecución.</h2><p>Trust analiza cada oportunidad desde valorización, riesgo, legalidad y coherencia patrimonial para que comprar sea una decisión estratégica.</p></article>
       </div>
     </section>
 
@@ -56,7 +66,7 @@
     <section class="section section-muted">
       <div class="container grid-2">
         <div><span class="eyebrow">Resultado</span><h2>Lo que debería quedar claro después de trabajar con Trust.</h2></div>
-        <div class="card"><ul class="check-list"><li>Decisiones inmobiliarias con criterio</li>
+        <div class="editorial-card"><ul class="check-list"><li>Decisiones inmobiliarias con criterio</li>
 <li>Inversiones con mayor potencial de valorización</li>
 <li>Reducción de riesgos en la compra</li>
 <li>Uso eficiente de su capital</li>
@@ -70,7 +80,12 @@
   </main>
 
   <a class="floating-whatsapp" href="#contacto">WhatsApp</a>
-  <footer class="site-footer"><div class="container footer-grid"><strong>TRUST Costa Rica</strong><span>© <span data-year></span> · Demo visual</span></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/img/logo%20trust%20symbol%20only%20gold.svg" alt="" aria-hidden="true"><strong>TRUST Costa Rica</strong></div>
+      <span>© <span data-year></span> · Estrategia fiscal, legal, contable y patrimonial.</span>
+    </div>
+  </footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

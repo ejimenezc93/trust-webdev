@@ -13,10 +13,12 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html"><span class="brand-mark">T</span><span>TRUST</span></a>
+      <a class="brand" href="index.html" aria-label="TRUST Costa Rica">
+        <img src="assets/img/logo%20trust%20gold.svg" alt="TRUST">
+      </a>
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">☰</button>
       <nav class="nav-menu" data-nav-menu><a href="legal-tributario.html">Legal tributario</a>
-        <a href="contabilidad.html">Contabilidad</a>
+        <a href="contabilidad.html" aria-current="page">Contabilidad</a>
         <a href="bienes-raices.html">Bienes raíces</a>
         <a href="seguros-inversion.html">Seguros e inversión</a></nav>
       <div class="nav-actions"><a class="btn btn-secondary" href="#contacto">WhatsApp</a><a class="btn btn-primary" href="#contacto">Agendar asesoría</a></div>
@@ -25,19 +27,27 @@
 
   <main>
     <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">Inicio</a> / Contabilidad</div>
-        <span class="eyebrow">Contabilidad</span>
-        <h1>Deje de tomar decisiones con información que no refleja su realidad</h1>
-        <p class="lead">Alineamos su contabilidad con una estrategia fiscal clara para que tenga control real de su negocio y opere con seguridad.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#contacto">Agendar asesoría</a><a class="btn btn-secondary" href="#contacto">Hablar por WhatsApp</a></div>
+      <div class="container page-hero-grid">
+        <div>
+          <div class="breadcrumb"><a href="index.html">Inicio</a> / Contabilidad</div>
+          <span class="eyebrow">Contabilidad</span>
+          <h1>Deje de tomar decisiones con información que no refleja su realidad</h1>
+          <p class="lead">Alineamos su contabilidad con una estrategia fiscal clara para que tenga control real de su negocio y opere con seguridad.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#contacto">Agendar asesoría</a><a class="btn btn-secondary" href="#contacto">Hablar por WhatsApp</a></div>
+        </div>
+        <aside class="service-summary" aria-label="Resumen de contabilidad">
+          <img src="assets/img/logo%20trust%20symbol%20only%20gold.svg" alt="" aria-hidden="true">
+          <strong>Información confiable para decidir.</strong>
+          <p>Convertimos la contabilidad en una herramienta de dirección, control y cumplimiento.</p>
+          <div class="summary-list"><span>Estados claros</span><span>Criterio fiscal</span><span>Reportes gerenciales</span></div>
+        </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="container grid-2">
-        <article class="card"><span class="eyebrow">El problema</span><h2>El costo de operar sin estrategia.</h2><p>La contabilidad de muchas empresas se limita a cumplir, pero no a aportar valor. Información atrasada o mal aplicada genera decisiones equivocadas, pérdida de oportunidades y exposición tributaria.</p></article>
-        <article class="card"><span class="eyebrow">La solución</span><h2>Criterio, estructura y ejecución.</h2><p>Entendemos la contabilidad como una herramienta estratégica: cada registro debe tener sentido, coherencia y utilidad real para dirigir el negocio.</p></article>
+        <article class="editorial-card"><span class="eyebrow">El problema</span><h2>El costo de operar sin estrategia.</h2><p>La contabilidad de muchas empresas se limita a cumplir, pero no a aportar valor. Información atrasada o mal aplicada genera decisiones equivocadas, pérdida de oportunidades y exposición tributaria.</p></article>
+        <article class="editorial-card"><span class="eyebrow">La solución</span><h2>Criterio, estructura y ejecución.</h2><p>Entendemos la contabilidad como una herramienta estratégica: cada registro debe tener sentido, coherencia y utilidad real para dirigir el negocio.</p></article>
       </div>
     </section>
 
@@ -56,7 +66,7 @@
     <section class="section section-muted">
       <div class="container grid-2">
         <div><span class="eyebrow">Resultado</span><h2>Lo que debería quedar claro después de trabajar con Trust.</h2></div>
-        <div class="card"><ul class="check-list"><li>Claridad total sobre la situación financiera</li>
+        <div class="editorial-card"><ul class="check-list"><li>Claridad total sobre la situación financiera</li>
 <li>Información confiable para tomar decisiones</li>
 <li>Cumplimiento adecuado de obligaciones</li>
 <li>Reducción de riesgos fiscales</li>
@@ -70,7 +80,12 @@
   </main>
 
   <a class="floating-whatsapp" href="#contacto">WhatsApp</a>
-  <footer class="site-footer"><div class="container footer-grid"><strong>TRUST Costa Rica</strong><span>© <span data-year></span> · Demo visual</span></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/img/logo%20trust%20symbol%20only%20gold.svg" alt="" aria-hidden="true"><strong>TRUST Costa Rica</strong></div>
+      <span>© <span data-year></span> · Estrategia fiscal, legal, contable y patrimonial.</span>
+    </div>
+  </footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

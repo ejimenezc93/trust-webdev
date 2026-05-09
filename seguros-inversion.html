@@ -13,31 +13,41 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html"><span class="brand-mark">T</span><span>TRUST</span></a>
+      <a class="brand" href="index.html" aria-label="TRUST Costa Rica">
+        <img src="assets/img/logo%20trust%20gold.svg" alt="TRUST">
+      </a>
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">☰</button>
       <nav class="nav-menu" data-nav-menu><a href="legal-tributario.html">Legal tributario</a>
         <a href="contabilidad.html">Contabilidad</a>
         <a href="bienes-raices.html">Bienes raíces</a>
-        <a href="seguros-inversion.html">Seguros e inversión</a></nav>
+        <a href="seguros-inversion.html" aria-current="page">Seguros e inversión</a></nav>
       <div class="nav-actions"><a class="btn btn-secondary" href="#contacto">WhatsApp</a><a class="btn btn-primary" href="#contacto">Agendar asesoría</a></div>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">Inicio</a> / Seguros e inversión</div>
-        <span class="eyebrow">Seguros e inversión</span>
-        <h1>Proteja su patrimonio y construya su futuro con estrategia</h1>
-        <p class="lead">Convertimos seguros e inversión en herramientas de protección real y crecimiento sostenido en el tiempo.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#contacto">Agendar asesoría</a><a class="btn btn-secondary" href="#contacto">Hablar por WhatsApp</a></div>
+      <div class="container page-hero-grid">
+        <div>
+          <div class="breadcrumb"><a href="index.html">Inicio</a> / Seguros e inversión</div>
+          <span class="eyebrow">Seguros e inversión</span>
+          <h1>Proteja su patrimonio y construya su futuro con estrategia</h1>
+          <p class="lead">Convertimos seguros e inversión en herramientas de protección real y crecimiento sostenido en el tiempo.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#contacto">Agendar asesoría</a><a class="btn btn-secondary" href="#contacto">Hablar por WhatsApp</a></div>
+        </div>
+        <aside class="service-summary" aria-label="Resumen de seguros e inversión">
+          <img src="assets/img/logo%20trust%20symbol%20only%20gold.svg" alt="" aria-hidden="true">
+          <strong>Protección y crecimiento planificado.</strong>
+          <p>Alineamos seguros, ahorro e inversión con objetivos personales, familiares y empresariales.</p>
+          <div class="summary-list"><span>Protección patrimonial</span><span>Plan financiero</span><span>Crecimiento sostenido</span></div>
+        </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="container grid-2">
-        <article class="card"><span class="eyebrow">El problema</span><h2>El costo de operar sin estrategia.</h2><p>Muchas personas subestiman la protección patrimonial: seguros sin estrategia, dinero sin dirección clara o inversiones sin criterio dejan expuesto lo que han construido.</p></article>
-        <article class="card"><span class="eyebrow">La solución</span><h2>Criterio, estructura y ejecución.</h2><p>Integramos protección y crecimiento en una sola estrategia, alineando seguros e instrumentos de inversión con objetivos personales y financieros.</p></article>
+        <article class="editorial-card"><span class="eyebrow">El problema</span><h2>El costo de operar sin estrategia.</h2><p>Muchas personas subestiman la protección patrimonial: seguros sin estrategia, dinero sin dirección clara o inversiones sin criterio dejan expuesto lo que han construido.</p></article>
+        <article class="editorial-card"><span class="eyebrow">La solución</span><h2>Criterio, estructura y ejecución.</h2><p>Integramos protección y crecimiento en una sola estrategia, alineando seguros e instrumentos de inversión con objetivos personales y financieros.</p></article>
       </div>
     </section>
 
@@ -56,7 +66,7 @@
     <section class="section section-muted">
       <div class="container grid-2">
         <div><span class="eyebrow">Resultado</span><h2>Lo que debería quedar claro después de trabajar con Trust.</h2></div>
-        <div class="card"><ul class="check-list"><li>Protección adecuada de su patrimonio</li>
+        <div class="editorial-card"><ul class="check-list"><li>Protección adecuada de su patrimonio</li>
 <li>Tranquilidad ante imprevistos</li>
 <li>Estrategia clara de ahorro e inversión</li>
 <li>Crecimiento sostenido de su capital</li>
@@ -70,7 +80,12 @@
   </main>
 
   <a class="floating-whatsapp" href="#contacto">WhatsApp</a>
-  <footer class="site-footer"><div class="container footer-grid"><strong>TRUST Costa Rica</strong><span>© <span data-year></span> · Demo visual</span></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/img/logo%20trust%20symbol%20only%20gold.svg" alt="" aria-hidden="true"><strong>TRUST Costa Rica</strong></div>
+      <span>© <span data-year></span> · Estrategia fiscal, legal, contable y patrimonial.</span>
+    </div>
+  </footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

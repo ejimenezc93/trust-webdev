@@ -13,7 +13,9 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html"><span class="brand-mark">T</span><span>TRUST</span></a>
+      <a class="brand" href="index.html" aria-label="TRUST Costa Rica">
+        <img src="assets/img/logo%20trust%20gold.svg" alt="TRUST">
+      </a>
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">☰</button>
       <nav class="nav-menu" data-nav-menu>
         <a href="legal-tributario.html">Legal tributario</a>
@@ -31,10 +33,10 @@
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Private advisory · Costa Rica</span>
-          <h1>Soluciones fiscales, legales, contables y patrimoniales integradas.</h1>
-          <p class="lead">Acompañamos a empresas e inversionistas a operar, proteger y hacer crecer su patrimonio en Costa Rica con estrategia personalizada, cumplimiento impecable y visión internacional.</p>
+        <div class="hero-copy">
+          <span class="eyebrow">Asesoría integral en Costa Rica</span>
+          <h1>Proteja y haga crecer su patrimonio con estrategia.</h1>
+          <p class="lead">Acompañamos a personas, empresas e inversionistas internacionales a operar con claridad fiscal, respaldo legal y criterio patrimonial en Costa Rica.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contacto">Agendar asesoría</a>
             <a class="btn btn-secondary" href="#contacto">Hablar por WhatsApp</a>
@@ -48,6 +50,20 @@
         </div>
         <aside class="hero-visual" aria-label="Costa Rica y estrategia patrimonial">
           <div class="cr-photo"></div>
+          <img class="hero-symbol" src="assets/img/logo%20trust%20symbol%20only%20gold.svg" alt="" aria-hidden="true">
+          <div class="growth-card" aria-hidden="true">
+            <span>Evolución patrimonial</span>
+            <strong>+23%</strong>
+            <small>Crecimiento sostenible</small>
+            <div class="bar-chart">
+              <i style="height: 32%;"></i>
+              <i style="height: 42%;"></i>
+              <i style="height: 38%;"></i>
+              <i style="height: 58%;"></i>
+              <i style="height: 72%;"></i>
+              <i style="height: 92%;"></i>
+            </div>
+          </div>
           <div class="strategy-orbit">
             <span>Estrategia 360°</span>
             <small>Cumplimiento · Eficiencia fiscal · Crecimiento</small>
@@ -64,10 +80,21 @@
           <p class="lead">Trust no trabaja servicios aislados. Integra criterios fiscales, contables, legales y patrimoniales para construir decisiones más seguras.</p>
         </div>
         <div class="service-list">
-          <a class="service-row" href="legal-tributario.html"><span>01</span><strong>Legal tributario</strong><p>Optimización fiscal dentro del marco legal y reducción de contingencias.</p><em>Ver landing →</em></a>
-          <a class="service-row" href="contabilidad.html"><span>02</span><strong>Contabilidad</strong><p>Información confiable y alineada a la estrategia real del negocio.</p><em>Ver landing →</em></a>
-          <a class="service-row" href="bienes-raices.html"><span>03</span><strong>Bienes raíces</strong><p>Decisiones inmobiliarias con criterio financiero, legal y patrimonial.</p><em>Ver landing →</em></a>
-          <a class="service-row" href="seguros-inversion.html"><span>04</span><strong>Seguros e inversión</strong><p>Protección y crecimiento planificado del patrimonio personal o empresarial.</p><em>Ver landing →</em></a>
+          <a class="service-row" href="legal-tributario.html"><span>01</span><strong>Legal tributario</strong><p>Optimización fiscal dentro del marco legal y reducción de contingencias.</p><em>Explorar →</em></a>
+          <a class="service-row" href="contabilidad.html"><span>02</span><strong>Contabilidad</strong><p>Información financiera confiable para decidir con control real.</p><em>Explorar →</em></a>
+          <a class="service-row" href="bienes-raices.html"><span>03</span><strong>Bienes raíces</strong><p>Inversión inmobiliaria con criterio financiero, legal y patrimonial.</p><em>Explorar →</em></a>
+          <a class="service-row" href="seguros-inversion.html"><span>04</span><strong>Seguros e inversión</strong><p>Protección y crecimiento planificado del patrimonio personal o empresarial.</p><em>Explorar →</em></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Principios de confianza de Trust">
+      <div class="container">
+        <div class="trust-principles">
+          <div class="principle"><span>01</span><strong>Enfoque internacional</strong><p>Atendemos clientes que necesitan operar con claridad dentro y fuera de Costa Rica.</p></div>
+          <div class="principle"><span>02</span><strong>Equipo experto</strong><p>Combinamos criterio fiscal, legal, contable y patrimonial en una sola lectura.</p></div>
+          <div class="principle"><span>03</span><strong>Soluciones integradas</strong><p>Diseñamos estructuras coherentes para decisiones empresariales y familiares.</p></div>
+          <div class="principle"><span>04</span><strong>Confidencialidad absoluta</strong><p>Su información se trata con discreción, orden y responsabilidad profesional.</p></div>
         </div>
       </div>
     </section>
@@ -90,7 +117,7 @@
 
     <section class="section">
       <div class="container grid-2">
-        <div class="card">
+        <div class="editorial-card">
           <span class="eyebrow">Resultado</span>
           <h2>Más control. Menos riesgo. Mejores decisiones.</h2>
           <ul class="check-list">
@@ -100,7 +127,7 @@
             <li>Mayor tranquilidad frente a la administración tributaria.</li>
           </ul>
         </div>
-        <div class="card">
+        <div class="editorial-card">
           <span class="eyebrow">Diferencia Trust</span>
           <h2>Una firma consultiva, no solo operativa.</h2>
           <p>La propuesta se centra en criterio, ejecución y acompañamiento. La meta no es solo cumplir requisitos: es construir una operación fiscal, contable y patrimonial que trabaje a favor del negocio.</p>
@@ -123,7 +150,12 @@
   </main>
 
   <a class="floating-whatsapp" href="#contacto">WhatsApp</a>
-  <footer class="site-footer"><div class="container footer-grid"><strong>TRUST Costa Rica</strong><span>© <span data-year></span> · Demo visual</span></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/img/logo%20trust%20symbol%20only%20gold.svg" alt="" aria-hidden="true"><strong>TRUST Costa Rica</strong></div>
+      <span>© <span data-year></span> · Estrategia fiscal, legal, contable y patrimonial.</span>
+    </div>
+  </footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
