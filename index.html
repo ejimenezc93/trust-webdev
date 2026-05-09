@@ -3,526 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trust Costa Rica | Estrategia Legal Tributaria</title>
-  <meta name="description" content="Estrategias legales tributarias para optimizar su carga fiscal, reducir riesgos y operar con tranquilidad frente a la administración tributaria.">
+  <title>Trust Costa Rica | Estrategia fiscal, legal y patrimonial</title>
+  <meta name="description" content="Estrategia fiscal, legal, contable y patrimonial para empresas que necesitan claridad, control y protección.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    :root {
-      --navy-950: #0f1720;
-      --navy-900: #172230;
-      --navy-800: #223244;
-      --slate-600: #5f6b76;
-      --slate-200: #d9dde2;
-      --slate-100: #eef1f4;
-      --ivory: #f8f5ef;
-      --gold-500: #b08d57;
-      --gold-400: #c5a26c;
-      --gold-100: #efe5d3;
-      --gold-050: #f7f3ec;
-      --white: #ffffff;
-      --shadow-soft: 0 24px 60px rgba(15, 23, 32, 0.08);
-      --shadow-card: 0 16px 40px rgba(15, 23, 32, 0.06);
-      --radius-xl: 1.75rem;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "Inter", system-ui, sans-serif;
-      color: var(--navy-900);
-      background: linear-gradient(180deg, #f4efe6 0%, #fbfaf7 30%, #ffffff 100%);
-    }
-
-    h1, h2, .brand-serif {
-      font-family: "Playfair Display", Georgia, serif;
-      letter-spacing: -0.03em;
-    }
-
-    .navbar {
-      background: rgba(15, 23, 32, 0.9);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .navbar-brand {
-      font-weight: 700;
-      letter-spacing: 0.03em;
-    }
-
-    .btn-outline-light {
-      border-color: rgba(255, 255, 255, 0.4);
-    }
-
-    .hero-section {
-      position: relative;
-      overflow: hidden;
-      padding: 8rem 0 6rem;
-      background:
-        radial-gradient(circle at top left, rgba(176, 141, 87, 0.22), transparent 26%),
-        linear-gradient(135deg, rgba(15, 23, 32, 0.97), rgba(23, 34, 48, 0.96));
-      color: var(--white);
-    }
-
-    .hero-section::after {
-      content: "";
-      position: absolute;
-      inset: auto -8rem -8rem auto;
-      width: 24rem;
-      height: 24rem;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(176, 141, 87, 0.16), transparent 65%);
-      pointer-events: none;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--gold-400);
-      margin-bottom: 1.35rem;
-    }
-
-    .eyebrow::before {
-      content: "";
-      width: 2.25rem;
-      height: 1px;
-      background: currentColor;
-      opacity: 0.85;
-    }
-
-    .hero-title {
-      font-size: clamp(2.9rem, 5vw, 5rem);
-      line-height: 0.98;
-      font-weight: 700;
-      max-width: 11ch;
-      margin-bottom: 1.4rem;
-    }
-
-    .hero-copy,
-    .lead-copy,
-    .step-card p,
-    .result-list li,
-    .cta-copy,
-    .metric-copy {
-      font-size: 1.06rem;
-      line-height: 1.85;
-    }
-
-    .hero-copy {
-      color: rgba(255, 255, 255, 0.82);
-      max-width: 42rem;
-      margin-bottom: 2rem;
-    }
-
-    .btn-gold {
-      background: linear-gradient(180deg, var(--gold-400), var(--gold-500));
-      color: var(--white);
-      border: none;
-      font-weight: 700;
-      padding: 0.95rem 1.65rem;
-      box-shadow: 0 12px 30px rgba(176, 141, 87, 0.28);
-    }
-
-    .btn-gold:hover {
-      background: linear-gradient(180deg, #cfaf7a, #b18a52);
-      color: var(--white);
-    }
-
-    .btn-soft {
-      color: var(--white);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      background: rgba(255, 255, 255, 0.04);
-    }
-
-    .hero-panel,
-    .info-card,
-    .step-card,
-    .result-card,
-    .cta-card {
-      border-radius: var(--radius-xl);
-      border: 1px solid rgba(17, 24, 39, 0.06);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .hero-panel {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 2rem;
-      backdrop-filter: blur(10px);
-    }
-
-    .metric-block {
-      padding: 1.1rem 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .metric-block:first-of-type {
-      border-top: 0;
-      padding-top: 0;
-    }
-
-    .metric-title {
-      display: block;
-      font-weight: 700;
-      font-size: 1.05rem;
-      margin-bottom: 0.35rem;
-      color: var(--white);
-    }
-
-    .metric-copy {
-      color: rgba(255, 255, 255, 0.7);
-      margin: 0;
-      font-size: 0.98rem;
-      line-height: 1.75;
-    }
-
-    section {
-      padding: 5.5rem 0;
-    }
-
-    .section-label {
-      color: var(--gold-500);
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-size: 0.78rem;
-      margin-bottom: 1rem;
-      display: inline-block;
-    }
-
-    .section-title {
-      font-size: clamp(2rem, 4vw, 3.25rem);
-      line-height: 1.04;
-      font-weight: 700;
-      margin-bottom: 1.1rem;
-    }
-
-    .lead-copy {
-      color: var(--slate-600);
-      margin-bottom: 0;
-    }
-
-    .info-card,
-    .step-card,
-    .result-card,
-    .cta-card {
-      background: rgba(255, 255, 255, 0.88);
-      padding: 2.2rem;
-      height: 100%;
-    }
-
-    .section-muted {
-      background: linear-gradient(180deg, rgba(239, 229, 211, 0.32), rgba(255, 255, 255, 0));
-    }
-
-    .step-card {
-      background: var(--white);
-      box-shadow: var(--shadow-card);
-    }
-
-    .step-number {
-      width: 3.2rem;
-      height: 3.2rem;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.2rem;
-      background: linear-gradient(180deg, var(--gold-100), #f6efe2);
-      color: var(--gold-500);
-      font-weight: 800;
-    }
-
-    .step-card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.85rem;
-      color: var(--navy-900);
-    }
-
-    .step-card p,
-    .result-list li,
-    .cta-copy {
-      color: var(--slate-600);
-    }
-
-    .result-card {
-      background: linear-gradient(180deg, #ffffff, #fcfaf6);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .result-card::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto 0 0;
-      width: 6px;
-      background: linear-gradient(180deg, var(--gold-400), var(--gold-500));
-    }
-
-    .result-list {
-      list-style: none;
-      padding: 0 0 0 1rem;
-      margin: 0;
-    }
-
-    .result-list li {
-      position: relative;
-      padding-left: 1.7rem;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      line-height: 1.7;
-    }
-
-    .result-list li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--gold-500);
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-
-    .cta-section {
-      padding-bottom: 6rem;
-    }
-
-    .cta-card {
-      background:
-        linear-gradient(135deg, rgba(15, 23, 32, 0.98), rgba(34, 50, 68, 0.98)),
-        linear-gradient(90deg, rgba(176, 141, 87, 0.16), transparent);
-      color: var(--white);
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 28px 70px rgba(15, 23, 32, 0.18);
-    }
-
-    .cta-card::after {
-      content: "";
-      position: absolute;
-      right: -5rem;
-      bottom: -5rem;
-      width: 14rem;
-      height: 14rem;
-      background: radial-gradient(circle, rgba(176, 141, 87, 0.2), transparent 70%);
-      border-radius: 50%;
-    }
-
-    .contact-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.85rem;
-      margin-top: 1.25rem;
-      color: rgba(255, 255, 255, 0.72);
-      font-size: 0.95rem;
-    }
-
-    footer {
-      padding: 1.25rem 0 3rem;
-      color: var(--slate-600);
-      font-size: 0.94rem;
-    }
-
-    @media (max-width: 991.98px) {
-      .hero-section {
-        padding-top: 7rem;
-      }
-
-      .hero-title,
-      .section-title {
-        max-width: none;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio">
-        <img src="assets/trust-logo-gold.svg" alt="Trust Costa Rica" style="height: 42px; width: auto;">
-        <span>Trust Costa Rica</span>
-      </a>
-      <a class="btn btn-sm btn-outline-light rounded-pill px-3" href="#cta">Agendar asesoría</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">T</span><span>TRUST</span></a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">☰</button>
+      <nav class="nav-menu" data-nav-menu>
+        <a href="legal-tributario.html">Legal tributario</a>
+        <a href="contabilidad.html">Contabilidad</a>
+        <a href="bienes-raices.html">Bienes raíces</a>
+        <a href="seguros-inversion.html">Seguros e inversión</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="#contacto">WhatsApp</a>
+        <a class="btn btn-primary" href="#contacto">Agendar asesoría</a>
+      </div>
     </div>
-  </nav>
+  </header>
 
   <main>
-    <section id="inicio" class="hero-section">
-      <div class="container position-relative" style="z-index: 1;">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <span class="eyebrow">Legal tributario</span>
-            <h1 class="hero-title">Deje de perder dinero en impuestos y elimine riesgos fiscales</h1>
-            <p class="hero-copy">
-              Diseñamos y ejecutamos estrategias legales para que pague lo justo, corrija malas prácticas y opere con total tranquilidad frente a la administración tributaria.
-            </p>
-            <div class="d-flex flex-wrap gap-3">
-              <a href="#cta" class="btn btn-gold btn-lg rounded-pill">Agendar asesoría</a>
-              <a href="#proceso" class="btn btn-soft btn-lg rounded-pill">Ver proceso</a>
-            </div>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Private advisory · Costa Rica</span>
+          <h1>Estrategia fiscal, legal y patrimonial para tomar mejores decisiones.</h1>
+          <p class="lead">Alineamos contabilidad, estructura legal y estrategia fiscal para que su empresa pague lo justo, reduzca riesgos y opere con mayor control.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Agendar asesoría</a>
+            <a class="btn btn-secondary" href="#contacto">Hablar por WhatsApp</a>
           </div>
-          <div class="col-lg-5">
-            <div class="hero-panel">
-              <img src="assets/trust-logo-gold.svg" alt="Logo Trust" class="mb-4" style="height: 92px; width: auto;">
-              <h2 class="h3 brand-serif mb-4">Estructura, ahorro y respaldo legal en una sola estrategia</h2>
-              <div class="metric-block">
-                <span class="metric-title">Optimización con criterio legal</span>
-                <p class="metric-copy">Reducimos fricción fiscal con decisiones bien estructuradas y sostenibles frente a revisión.</p>
-              </div>
-              <div class="metric-block">
-                <span class="metric-title">Prevención de contingencias</span>
-                <p class="metric-copy">Identificamos riesgos antes de que se conviertan en ajustes, sanciones o exposición innecesaria.</p>
-              </div>
-              <div class="metric-block">
-                <span class="metric-title">Ejecución acompañada</span>
-                <p class="metric-copy">No entregamos teoría. Aterrizamos la estrategia y la implementamos junto a usted.</p>
-              </div>
-            </div>
+          <div class="proof-strip">
+            <span class="proof-pill">Costa Rica</span>
+            <span class="proof-pill">España</span>
+            <span class="proof-pill">Estados Unidos</span>
+            <span class="proof-pill">Fiscal · Legal · Contable</span>
           </div>
+        </div>
+        <aside class="advisory-panel" aria-label="Panel estratégico Trust">
+          <div class="panel-card">
+            <span class="panel-label">Diagnóstico estratégico</span>
+            <div class="panel-value">Riesgo, ahorro y estructura en una sola visión</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric"><strong>01</strong><span>Diagnóstico</span></div>
+            <div class="metric"><strong>02</strong><span>Estrategia</span></div>
+            <div class="metric"><strong>03</strong><span>Ejecución</span></div>
+          </div>
+          <div class="panel-card">
+            <span class="panel-label">Resultado</span>
+            <div class="panel-value">Claridad para proteger y hacer crecer patrimonio.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Servicios</span>
+          <h2>Cuatro áreas conectadas por una misma estrategia.</h2>
+          <p class="lead">Trust no trabaja servicios aislados. Integra criterios fiscales, contables, legales y patrimoniales para construir decisiones más seguras.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card"><div class="icon">₡</div><h3>Legal tributario</h3><p>Optimización fiscal dentro del marco legal y reducción de contingencias.</p><a class="link-arrow" href="legal-tributario.html">Ver landing →</a></article>
+          <article class="card"><div class="icon">∑</div><h3>Contabilidad</h3><p>Información confiable y alineada a la estrategia real del negocio.</p><a class="link-arrow" href="contabilidad.html">Ver landing →</a></article>
+          <article class="card"><div class="icon">⌂</div><h3>Bienes raíces</h3><p>Decisiones inmobiliarias con criterio financiero, legal y patrimonial.</p><a class="link-arrow" href="bienes-raices.html">Ver landing →</a></article>
+          <article class="card"><div class="icon">◈</div><h3>Seguros e inversión</h3><p>Protección y crecimiento planificado del patrimonio personal o empresarial.</p><a class="link-arrow" href="seguros-inversion.html">Ver landing →</a></article>
         </div>
       </div>
     </section>
 
-    <section id="problema">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-5">
-            <span class="section-label">El problema</span>
-            <h2 class="section-title">Muchas empresas pagan de más y asumen riesgos fiscales sin notarlo</h2>
-          </div>
-          <div class="col-lg-7">
-            <div class="info-card">
-              <p class="lead-copy mb-4">
-                Decisiones mal estructuradas, gastos mal aplicados y una falta de alineación entre lo contable y lo legal terminan generando dos consecuencias claras: se paga más de lo necesario y se asumen riesgos innecesarios frente a la administración tributaria.
-              </p>
-              <p class="lead-copy">
-                En la mayoría de los casos, no es falta de intención, sino falta de estrategia y ejecución.
-              </p>
-            </div>
-          </div>
+    <section class="section section-dark">
+      <div class="container grid-2">
+        <div>
+          <span class="eyebrow">El problema</span>
+          <h2>Cumplir no siempre significa tener estrategia.</h2>
+          <p class="lead">Muchas empresas pagan más de lo necesario, toman decisiones con información incompleta o cargan riesgos que podrían prevenirse con una estructura correcta.</p>
+        </div>
+        <div class="process">
+          <div class="process-step"><div><h3>Diagnóstico completo</h3><p>Identificamos riesgos, ineficiencias y oportunidades.</p></div></div>
+          <div class="process-step"><div><h3>Diseño de estrategia</h3><p>Estructuramos un plan fiscal, legal y contable alineado al negocio.</p></div></div>
+          <div class="process-step"><div><h3>Implementación</h3><p>No nos quedamos en recomendaciones: ejecutamos con usted.</p></div></div>
+          <div class="process-step"><div><h3>Seguimiento</h3><p>Mantenemos la estructura funcionando correctamente en el tiempo.</p></div></div>
         </div>
       </div>
     </section>
 
-    <section id="solucion" class="section-muted">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-5 order-lg-2">
-            <span class="section-label">La solución</span>
-            <h2 class="section-title">Abordamos el área fiscal de forma integral y con visión empresarial</h2>
-          </div>
-          <div class="col-lg-7 order-lg-1">
-            <div class="info-card">
-              <p class="lead-copy mb-4">
-                En Trust Costa Rica no se trata únicamente de cumplir, sino de estructurar correctamente su operación para optimizar la carga tributaria dentro del marco legal.
-              </p>
-              <p class="lead-copy mb-0">
-                Diseñamos una estrategia adaptada a su giro de negocio, ordenamos su estructura y creamos los vehículos necesarios para aprovechar cada oportunidad de manera correcta.
-              </p>
-            </div>
-          </div>
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <span class="eyebrow">Resultado</span>
+          <h2>Más control. Menos riesgo. Mejores decisiones.</h2>
+          <ul class="check-list">
+            <li>Pago justo de impuestos dentro del marco legal.</li>
+            <li>Información financiera clara para decidir.</li>
+            <li>Estructura empresarial y patrimonial más ordenada.</li>
+            <li>Mayor tranquilidad frente a la administración tributaria.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="eyebrow">Diferencia Trust</span>
+          <h2>Una firma consultiva, no solo operativa.</h2>
+          <p>La propuesta se centra en criterio, ejecución y acompañamiento. La meta no es solo cumplir requisitos: es construir una operación fiscal, contable y patrimonial que trabaje a favor del negocio.</p>
         </div>
       </div>
     </section>
 
-    <section id="proceso">
-      <div class="container">
-        <div class="text-center mx-auto mb-5" style="max-width: 47rem;">
-          <span class="section-label">Cómo trabajamos</span>
-          <h2 class="section-title">Un proceso claro para convertir complejidad fiscal en control</h2>
-          <p class="lead-copy">Analizamos, estructuramos, ejecutamos y damos seguimiento para que su estrategia fiscal funcione en la práctica, no solo en el papel.</p>
+    <section id="contacto" class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Evalúe su caso con criterio estratégico.</h2>
+          <p>Agende una asesoría o escriba por WhatsApp para revisar oportunidades, riesgos y próximos pasos.</p>
         </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-xl-3">
-            <div class="step-card">
-              <div class="step-number">1</div>
-              <h3>Diagnóstico completo</h3>
-              <p class="mb-0">Analizamos su situación actual para identificar riesgos, ineficiencias y oportunidades de mejora.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <div class="step-card">
-              <div class="step-number">2</div>
-              <h3>Diseño de estrategia</h3>
-              <p class="mb-0">Estructuramos un plan fiscal alineado a su negocio, enfocado en ahorro, prevención y orden operativo.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <div class="step-card">
-              <div class="step-number">3</div>
-              <h3>Implementación y ejecución</h3>
-              <p class="mb-0">No nos quedamos en la recomendación. Ejecutamos junto a usted cada acción necesaria para asegurar resultados reales.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-3">
-            <div class="step-card">
-              <div class="step-number">4</div>
-              <h3>Seguimiento constante</h3>
-              <p class="mb-0">Supervisamos que todo se mantenga alineado y funcionando correctamente en el tiempo.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="resultado" class="section-muted">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-5">
-            <span class="section-label">Resultado</span>
-            <h2 class="section-title">Más control, menos exposición y una operación fiscal bien estructurada</h2>
-          </div>
-          <div class="col-lg-7">
-            <div class="result-card">
-              <ul class="result-list">
-                <li>Pago justo de impuestos dentro del marco legal</li>
-                <li>Reducción de riesgos y contingencias</li>
-                <li>Estructura clara y ordenada</li>
-                <li>Mayor control sobre sus decisiones fiscales</li>
-                <li>Tranquilidad al operar su empresa</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="cta" class="cta-section">
-      <div class="container">
-        <div class="cta-card p-4 p-lg-5">
-          <span class="eyebrow">Agende su asesoría</span>
-          <h2 class="section-title text-white">Tome el control de su estrategia fiscal y deje de asumir riesgos innecesarios</h2>
-          <p class="cta-copy mb-4">Agende su asesoría y analicemos su caso. Una estructura correcta hoy puede evitar costos innecesarios mañana.</p>
-          <div class="d-flex flex-wrap gap-3">
-            <a href="mailto:contacto@trustcostarica.com?subject=Asesor%C3%ADa%20fiscal" class="btn btn-gold btn-lg rounded-pill">Solicitar asesoría</a>
-            <a href="#inicio" class="btn btn-soft btn-lg rounded-pill">Volver al inicio</a>
-          </div>
-          <div class="contact-strip">
-            <span>Trust Costa Rica</span>
-            <span>•</span>
-            <span>Estrategia legal tributaria</span>
-            <span>•</span>
-            <span>Atención personalizada</span>
-          </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#">Agendar asesoría</a>
+          <a class="btn btn-secondary" href="#">WhatsApp</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
-      <span>© 2026 Trust Costa Rica</span>
-      <span>Landing page de prueba para servicios legales tributarios.</span>
-    </div>
-  </footer>
+  <a class="floating-whatsapp" href="#contacto">WhatsApp</a>
+  <footer class="site-footer"><div class="container footer-grid"><strong>TRUST Costa Rica</strong><span>© <span data-year></span> · Demo visual</span></div></footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
